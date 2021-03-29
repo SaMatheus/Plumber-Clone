@@ -17,6 +17,35 @@ export default function Home() {
           <img src="icons/banner2.svg" alt=""/>
         </div>
       </section>
+      <section className={styles.servicesContainer}>
+        <div>
+          <img src="icons/group-icon1.svg" alt=""/>
+          <h1>Residental service</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div>
+          <img src="icons/group-icon2.svg" alt=""/>
+          <h1>Commercial Service</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div>
+          <img src="icons/group-icon3.svg" alt=""/>
+          <h1>Maintenance</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry.
+          </p>
+          <button>Learn More</button>
+        </div>
+      </section>
     </>
    )
 }

@@ -8,6 +8,7 @@
 
   /* Visual */
   background: var(--white);
+  box-shadow: 0 -3px 10px grey;
 }
 
 .logo img {

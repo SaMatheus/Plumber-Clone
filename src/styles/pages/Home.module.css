@@ -1,9 +1,12 @@
+
+/* Banner Container */
 .bannerContainer {
   /* Box Model */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding-top: 4.8rem;
+  height: 60vh;
 }
 
 .bannerLeft {
@@ -24,7 +27,7 @@
   font-weight: 900;
 }
 .bannerLeft h2 {
-  font-size: 3.4rem;
+  font-size:3.6rem;
   margin: 1.7rem 0;
 }
 .bannerLeft button {
@@ -35,12 +38,104 @@
   background: var(--red);
   border: 0 none;
   border-radius: 35px;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .bannerRight {
-  width: 60%;
+  /* Box Model */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60%;
+  height: 100%;
+
+  /* Position */
+  z-index: 0;
+}
+.bannerRight img {
+  width: 40%;
+  align-self: flex-end;
+}
+.bannerRight img:nth-last-child(2) {
+  width: 30rem;
+  height: 43rem;
 }
 .bannerRight img:nth-last-child(1) {
   transform: translateX(-3rem);
+  width: 39rem;
+  height: 34rem;
+}
+
+/* Services Container */
+.servicesContainer {
+  /* Box Model */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 35vh;
+
+  /* Visual */
+  background: var(--red);
+
+  /* Position */
+  position: relative;
+  z-index: 1;
+}
+.servicesContainer div {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24rem;
+  justify-self: center;
+
+  /* Position */
+  position: relative;
+}
+.servicesContainer div::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+  background: var(--white);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.servicesContainer div > h1 {
+  /* Tipography */
+  font-size: 1.4rem;
+  text-transform: capitalize;
+
+  /* Box Model */
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+.servicesContainer div > p {
+  /* Tipography */
+  color: var(--white);
+  text-align: center;
+
+  /* Box Model */
+  margin-bottom: 1.2rem;
+}
+.servicesContainer div > button {
+  /* Tipography */
+  font-size: 1.6rem;
+  /* Visual */
+  background: #F6FAFB;
+  
+  /* Box Model */
+  border: none 0;
+  border-radius: .5rem;
+  height: 3.2rem;
+  width: 11.5rem;
+
+}
+.servicesContainer div > button:hover {
+  /* Visual */
+  filter: brightness(.9);
 }
