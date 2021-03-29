@@ -1,0 +1,75 @@
+.headerContainer {
+  /* Box Model */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+
+  /* Visual */
+  background: var(--white);
+}
+
+.logo img {
+  width: 17rem;
+}
+
+.navBar{
+  /* Box Model */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 55%;
+}
+.navBar ul {
+  /* Box Model */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 3.7rem;
+}
+.navBar  li {
+  /* Typography */
+  color: var(--text1);
+  font-weight: 500;
+  font-size: 1.4rem;
+
+  /* Position */
+  position: relative;
+}
+.navBar  li:hover::after {
+  content: '';
+  display: inline;
+  width: 0;
+  height: 2px;
+  background:var(--red);
+  position: absolute;
+  bottom: -.2rem;
+  left: 0;
+  animation: slide 0.2s linear forwards;
+}
+.navBar button {
+  /* Box Model */
+  padding: 1.2rem 0; 
+  border: 0 none;
+  border-radius: 0.5rem;
+  width: 25rem;
+
+  /* Visual */
+  color: var(--white);
+  background: var(--red);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.navBar button:hover {
+  opacity: 0.9;
+}
+
+/* Keyframes */
+@keyframes slide {
+  100% {
+    width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+.bannerContainer {
+  /* Box Model */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 4.8rem;
+}
+
+.bannerLeft {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  min-height: 22rem;
+}
+.bannerLeft h1 {
+  font-size: 4.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.bannerLeft h1 > strong {
+  font-weight: 900;
+}
+.bannerLeft h2 {
+  font-size: 3.4rem;
+  margin: 1.7rem 0;
+}
+.bannerLeft button {
+  width: 16rem;
+  height: 4.4rem;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--red);
+  border: 0 none;
+  border-radius: 35px;
+  font-size: 1.4rem;
+}
+
+.bannerRight {
+  width: 60%;
+}
+.bannerRight img:nth-last-child(1) {
+  transform: translateX(-3rem);
+}
