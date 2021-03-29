@@ -18,7 +18,7 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.servicesContainer}>
-        <div>
+        <div className={styles.service}>
           <img src="icons/group-icon1.svg" alt=""/>
           <h1>Residental service</h1>
           <p>
@@ -27,7 +27,7 @@ export default function Home() {
           </p>
           <button>Learn More</button>
         </div>
-        <div>
+        <div className={styles.service}>
           <img src="icons/group-icon2.svg" alt=""/>
           <h1>Commercial Service</h1>
           <p>
@@ -36,7 +36,7 @@ export default function Home() {
           </p>
           <button>Learn More</button>
         </div>
-        <div>
+        <div className={styles.service}>
           <img src="icons/group-icon3.svg" alt=""/>
           <h1>Maintenance</h1>
           <p>
