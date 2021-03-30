@@ -1,5 +1,8 @@
-import Header from '../components/Header'
 import styles from '../styles/pages/Home.module.css'
+
+// COMPONENTS
+import Button from '../components/Button'
+import Header from '../components/Header'
 
 export default function Home() {
   return (
@@ -10,7 +13,7 @@ export default function Home() {
           <h1><strong>Call us for any</strong></h1>
           <h1>Plumbing needs</h1>
           <h2>+1800-9938-2839</h2>
-          <button>See all services</button>
+          <Button>See all services</Button>
         </div>
         <div className={styles.bannerRight}>
           <img src="icons/banner1.svg" alt=""/>
@@ -44,6 +47,19 @@ export default function Home() {
             Lorem Ipsum has been the industry.
           </p>
           <button>Learn More</button>
+        </div>
+      </section>
+      <section className={styles.videoContainer}>
+        <div className={styles.videoBox}>
+          <div className={styles.videoText}>
+            <h1>Welcome to Plumber Company</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type 
+              specimen book.
+            </p>
+          </div>
         </div>
       </section>
     </>
