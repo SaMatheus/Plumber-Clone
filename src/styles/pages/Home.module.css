@@ -322,3 +322,40 @@
   /* Visual */
   background: url('/icons/section_img.svg') no-repeat center center / cover;
 }
+
+/* Team Container */
+.teamContainer {
+  /* Box Model */
+  height: 80vh;
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.teamText {
+  /* Box Model */
+  width: 90%;
+
+  /* Tipography */
+  text-align: center;
+}
+.teamText h1 {
+  /* Box Model */
+  margin-bottom: 1.6rem;
+
+  /* Tipography */
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.teamText p {
+  /* Tipography */
+  font-size: 1.6rem;
+
+  /* Color */
+  color: var(--text3);
+}
+
+.teamImages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

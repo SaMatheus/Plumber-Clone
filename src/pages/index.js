@@ -9,6 +9,7 @@ import Header from '../components/Header'
 
 // DATA
 import pointsData from '../data/pointsData'
+import teamData from '../data/teamData'
 
 export default function Home() {
   return (
@@ -111,7 +112,30 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.imageContainer}></section>
-      <section></section>
+      <section className={styles.teamContainer}>
+        <div className={styles.teamText}>
+          <h1>Our Dedicated Team</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type
+            specimen book.
+          </p>
+        </div>
+        <div className={styles.teamImages}>
+          {teamData.map(employee => {
+            return (
+              <div key={employee.id} className={styles.teamEmployee}>
+                <img src="/icons/team.svg" alt=""/>
+                <div className={styles.teamEmployeeText}>
+                  <p>{employee.name}</p>
+                  <span>{employee.job}</span>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </section>
       <section></section>
       <section></section>
     </>
