@@ -7,6 +7,9 @@ import { ImPlay2 } from "react-icons/im";
 import Button from '../components/Button'
 import Header from '../components/Header'
 
+// DATA
+import pointsData from '../data/pointsData'
+
 export default function Home() {
   return (
     <>
@@ -55,7 +58,7 @@ export default function Home() {
       <section className={styles.videoContainer}>
         <div className={styles.videoBox}>
           <div className={styles.videoText}>
-            <h1>Welcome to Plumber Company</h1>
+            <h1>Welcome to <br/> Plumber Company</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -67,6 +70,50 @@ export default function Home() {
           <ImPlay2 />
         </div>
       </section>
+      <section className={styles.companyHistoryContainer}>
+        <span className={styles.companyHistoryImg}/>
+        <div className={styles.companyHistoryText}>
+          <h1>Our Company History</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type 
+            specimen book
+          </p>
+          <h2>Trust Our Team of Experts</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type 
+            specimen book
+          </p>
+        </div>
+      </section>
+      <section className={styles.plumberPointsContainer}>
+        <div className={styles.plumberPointsText}>
+          <h1>Plumber Points</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type
+            specimen book.
+          </p>
+        </div>
+        <div className={styles.plumberPointsTags}>
+          {pointsData.map(point => {
+            return (
+              <div key={point.id} className={styles.point}>
+                <img src="/icons/point_icon.svg" alt=""/>
+                <p>{point.title}</p>
+              </div>
+            )
+          })}
+        </div>
+      </section>
+      <section className={styles.imageContainer}></section>
+      <section></section>
+      <section></section>
+      <section></section>
     </>
    )
 }

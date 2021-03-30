@@ -144,7 +144,7 @@
   filter: brightness(.9);
 }
 
-/* Video COntainer */
+/* Video Container */
 .videoContainer {
   /* Box Model */
   height: 80vh;
@@ -194,6 +194,7 @@
 }
 .videoText h1 {
   font-size: 4.4rem;
+  text-transform: capitalize;
 }
 .videoText p {
   /* Tipography */
@@ -202,4 +203,122 @@
   /* Box Model */
   margin-top: 1.2rem;
   margin-bottom: 3rem;
+}
+
+/* Company History Container */
+.companyHistoryContainer {
+  /* Box Model */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  /* Visual */
+  background: var(--red);
+}
+
+.companyHistoryImg {
+  /* Box Model */
+  width: 50%;
+  height: 100%;
+
+  /* Visual */
+  background: url('/icons/company_history_img.svg') no-repeat center center / cover;
+  transform: scaleX(-1);
+}
+
+.companyHistoryText {
+  /* Box Model */
+  width: 40%;
+  height: 90%;
+
+  /* Visual */
+  color: var(--white);
+}
+.companyHistoryText h1 {
+  /* Tipography */
+  font-size: 4.4rem;
+
+  /* Box Model */
+  margin-bottom: 2rem;
+}
+.companyHistoryText h2 {
+  /* Tipography */
+  font-size: 3rem;
+  font-weight: 300;
+
+  /* Box Model */
+  margin-top: 3rem ;
+  margin-bottom: 2rem ;
+}
+.companyHistoryText p {
+  /* Tipography */
+  font-size: 1.4rem;
+}
+
+/* Plumber Points Container */
+.plumberPointsContainer {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.plumberPointsText {
+  /* Box Model */
+  width: 90%;
+
+  /* Tipography */
+  text-align: center;
+}
+.plumberPointsText h1 {
+  /* Box Model */
+  margin-bottom: 1.6rem;
+
+  /* Tipography */
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.plumberPointsText p {
+  /* Tipography */
+  font-size: 1.6rem;
+
+  /* Color */
+  color: var(--text3);
+}
+
+.plumberPointsTags {
+  /* Box Model */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 3rem 15rem;
+  margin-top: 5rem;
+}
+.point {
+  display: flex;
+}
+.point img {
+  margin-right: 1rem;
+}
+.point p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/* Image Container */
+.imageContainer {
+  /* Box Model */
+  height: 30vh;
+  width: 100%;
+
+  /* Visual */
+  background: url('/icons/section_img.svg') no-repeat center center / cover;
 }
