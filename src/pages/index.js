@@ -1,5 +1,8 @@
 import styles from '../styles/pages/Home.module.css'
 
+// ICONS
+import { ImPlay2 } from "react-icons/im";
+
 // COMPONENTS
 import Button from '../components/Button'
 import Header from '../components/Header'
@@ -59,7 +62,9 @@ export default function Home() {
               when an unknown printer took a galley of type and scrambled it to make a type 
               specimen book.
             </p>
+            <Button>Learn More</Button>
           </div>
+          <ImPlay2 />
         </div>
       </section>
     </>
