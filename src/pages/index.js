@@ -2,7 +2,7 @@
 import styles from '../styles/pages/Home.module.css'
 
 // HOOKS
-import {useState} from 'react'
+import { useRouter } from 'next/router';
 
 // ICONS
 import { ImPlay2 } from "react-icons/im";
@@ -17,6 +17,8 @@ import teamData from '../data/teamData'
 import Wrapper from '../components/Wrapper';
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <>
       <Header />
@@ -25,7 +27,7 @@ export default function Home() {
           <h1><strong>Call us for any</strong></h1>
           <h1>Plumbing needs</h1>
           <h2>+1800-9938-2839</h2>
-          <Button>See all services</Button>
+          <Button onClick={() => router.push('/services')}>See all services</Button>
         </div>
         <div className={styles.bannerRight}>
           <img src="icons/2-banner/banner1.svg" alt=""/>
@@ -40,7 +42,7 @@ export default function Home() {
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry.
           </p>
-          <button>Learn More</button>
+          <button onClick={() => router.push('/services')}>Learn More</button>
         </div>
         <div className={styles.service}>
           <img src="icons/3-services/group_service2.svg" alt=""/>
@@ -49,7 +51,7 @@ export default function Home() {
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry.
           </p>
-          <button>Learn More</button>
+          <button onClick={() => router.push('/services')}>Learn More</button>
         </div>
         <div className={styles.service}>
           <img src="icons/3-services/group_service3.svg" alt=""/>
@@ -58,7 +60,7 @@ export default function Home() {
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry.
           </p>
-          <button>Learn More</button>
+          <button onClick={() => router.push('/services')}>Learn More</button>
         </div>
       </section>
       <section className={styles.videoContainer}>

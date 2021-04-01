@@ -1,6 +1,9 @@
 // STYLES
 import styles from '../styles/components/Header.module.css'
 
+// ROUTER
+import Link from 'next/link'
+
 function Header() {
   const handleClick = () => {
     alert('Request success, please wait for the contact of our collaborators!')
@@ -12,12 +15,36 @@ function Header() {
       </div>
       <div className={styles.navBar}>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Contact</a></li>
+          <li>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              <a>About us</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/services">
+              <a>Services</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/project">
+              <a>Project</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/blog">
+              <a>Blogs</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact">
+              <a>Contact</a>
+            </Link>
+          </li>
         </ul>
         <button onClick={handleClick}>Request a Call Back</button>
       </div>
