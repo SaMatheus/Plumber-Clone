@@ -122,14 +122,14 @@ export default function Home() {
             specimen book.
           </p>
         </div>
-        <div className={styles.teamImages}>
+        <div className={styles.teamEmployee}>
           {teamData.map(employee => {
             return (
-              <div key={employee.id} className={styles.teamEmployee}>
-                <img src="/icons/team.svg" alt=""/>
-                <div className={styles.teamEmployeeText}>
+              <div key={employee.id} className={styles.employee}>
+                <img src="/icons/team.png" alt=""/>
+                <div className={styles.employeeText}>
                   <p>{employee.name}</p>
-                  <span>{employee.job}</span>
+                  <strong>{employee.job}</strong>
                 </div>
               </div>
             )

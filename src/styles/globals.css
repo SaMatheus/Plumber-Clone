@@ -45,11 +45,15 @@ button {
   body {
     font-size: 62.5%;
   }
+
+  section {
+    padding: 0 100px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   section {
-    padding: 0 100px;
+    padding: 0 80px;
   }
 }
 @media screen and (max-width: 1080px) {
