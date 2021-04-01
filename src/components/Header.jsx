@@ -7,7 +7,7 @@ function Header() {
   return (
     <section className={styles.headerContainer}>
       <div className={styles.logo}>
-        <img src="icons/logo.svg" alt=""/>
+        <img src="icons/1-header/logo.svg" alt=""/>
       </div>
       <div className={styles.navBar}>
         <ul>
