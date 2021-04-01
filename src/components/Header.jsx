@@ -1,3 +1,4 @@
+// STYLES
 import styles from '../styles/components/Header.module.css'
 
 function Header() {

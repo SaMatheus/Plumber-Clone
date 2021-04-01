@@ -1,4 +1,8 @@
+// STYLES
 import styles from '../styles/pages/Home.module.css'
+
+// HOOKS
+import {useState} from 'react'
 
 // ICONS
 import { ImPlay2 } from "react-icons/im";
@@ -10,6 +14,7 @@ import Header from '../components/Header'
 // DATA
 import pointsData from '../data/pointsData'
 import teamData from '../data/teamData'
+import Wrapper from '../components/Wrapper';
 
 export default function Home() {
   return (
@@ -29,7 +34,7 @@ export default function Home() {
       </section>
       <section className={styles.servicesContainer}>
         <div className={styles.service}>
-          <img src="icons/services/first.svg" alt=""/>
+          <img src="icons/3-services/group_service1.svg" alt=""/>
           <h1>Residental service</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -38,7 +43,7 @@ export default function Home() {
           <button>Learn More</button>
         </div>
         <div className={styles.service}>
-          <img src="icons/services/second.svg" alt=""/>
+          <img src="icons/3-services/group_service2.svg" alt=""/>
           <h1>Commercial Service</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -47,7 +52,7 @@ export default function Home() {
           <button>Learn More</button>
         </div>
         <div className={styles.service}>
-          <img src="icons/services/third.svg" alt=""/>
+          <img src="icons/3-services/group_service3.svg" alt=""/>
           <h1>Maintenance</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -111,7 +116,7 @@ export default function Home() {
           })}
         </div>
       </section>
-      <section className={styles.imageContainer}></section>
+      <section className={styles.imageContainer} />
       <section className={styles.teamContainer}>
         <div className={styles.teamText}>
           <h1>Our Dedicated Team</h1>
@@ -136,10 +141,7 @@ export default function Home() {
           })}
         </div>
       </section>
-      <section className={styles.testimonialContainer}>
-        <div className={styles.testimonialCarrousel}></div>
-      </section>
-      <section></section>
+      <Wrapper />
     </>
    )
 }
