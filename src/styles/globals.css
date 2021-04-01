@@ -25,7 +25,9 @@ body {
 }
 
 section {
-  padding: 0 135px;
+  padding: 3rem 135px;
+  height: 100%;
+  width: 100%;
 }
 
 a,

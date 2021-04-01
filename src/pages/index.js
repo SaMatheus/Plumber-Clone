@@ -116,7 +116,7 @@ export default function Home() {
           })}
         </div>
       </section>
-      <section className={styles.imageContainer} />
+      <div className={styles.imageContainer} />
       <section className={styles.teamContainer}>
         <div className={styles.teamText}>
           <h1>Our Dedicated Team</h1>
