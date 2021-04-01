@@ -40,3 +40,7 @@
   /* Box Model */
   margin: 1rem 0 ;
 }
+.news p {
+  /* Tipography */
+  font-size: 1.2rem;
+}

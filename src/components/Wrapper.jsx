@@ -1,4 +1,5 @@
 // COMPONENTS
+import Footer from './Footer'
 import News from './News'
 import Testimonial from './Testimonial'
 
@@ -7,6 +8,7 @@ const Wrapper = () => {
     <>
       <Testimonial />
       <News />
+      <Footer />
     </>
   )
 }

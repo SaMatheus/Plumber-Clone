@@ -1,0 +1,119 @@
+.footerContainer {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  /* Visual */
+  background: var(--black);
+  color: white;
+}
+.footerContainer h1 {
+  /* Visual */
+  color: var(--red);
+
+  /* Tipography */
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.footerContent {
+  /* Box Model */
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 0 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 135px;
+}
+
+
+.footerLogoBox {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footerLogoBox img {
+  /* Box Model */
+  width: 16.5rem;
+  height: 4rem;
+  margin-bottom: 3rem;
+}
+.footerLogoBox p {
+  max-width: 36rem;
+  font-size: 1.2rem;
+}
+.footerLogoBox div {
+  /* Box Model */
+  display: flex;
+  width: 100%;
+  gap: 0 1rem;
+  margin-top: 1.5rem;
+
+  /* Visual */
+  color: var(--red);
+}
+.footerLogoBox div svg {
+  font-size: 1.2rem;
+}
+
+.footerServicesAndContact {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.footerRecentPost {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem 0;
+  height: 100%;
+}
+.footerRecentPost h1 {
+  margin-bottom: 1rem;
+}
+
+.footerPost {
+  display: flex;
+}
+.footerPost img{
+  /* Bo Model */
+  width: 6.8rem;
+  height: 4.5rem;
+  margin-right: 1.2rem;
+}
+.footerPost h2 {
+  font-size: 1.2rem;
+}
+.footerPost p {
+  font-size: .8rem;
+}
+
+.footerCopy {
+  /* Box Model */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 135px;
+
+  /* Visual */
+  border-top: 2px solid var(--text3);
+  color: var(--red);
+}
+.footerCopy div {
+  /* Box Model */
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+}
