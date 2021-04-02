@@ -37,7 +37,7 @@ const About = () => {
       </p>
      </RouteDescription>
      <section className={styles.pointsCompanyContainer}>
-       <div className={styles.pointsCompanyText}>
+       <div className={styles.text}>
          <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -58,7 +58,7 @@ const About = () => {
           of Lorem Ipsum.
          </p>
        </div>
-       <div className={styles.pointsCompanyGrid}>
+       <div className={styles.grid}>
         {pointsData.map(service => {
           return (
             <div className={styles.pointService}>

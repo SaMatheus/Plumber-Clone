@@ -55,19 +55,19 @@ const servicesData = [
   },
   {
     id: 10,
-    img: '/icons/services/icon2.svg',
+    img: '/icons/services/icon1.svg',
     title: 'Plumbing Service',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the.',
   },
   {
     id: 11,
-    img: '/icons/services/icon4.svg',
+    img: '/icons/services/icon2.svg',
     title: 'Plumbing Service',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the.',
   },
   {
     id: 12,
-    img: '/icons/services/icon1.svg',
+    img: '/icons/services/icon4.svg',
     title: 'Plumbing Service',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the.',
   },

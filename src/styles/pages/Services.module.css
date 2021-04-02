@@ -1,0 +1,84 @@
+.servicesContainer {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.text h1 {
+  /* Tipography */
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.text p {
+  /* Box Model */
+  width: 65%;
+  margin-top: 1.5rem;
+
+  /* Tipography */
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 2.3rem;
+  
+  /* Visual */
+  color: var(--text3);
+}
+
+.grid {
+  /* Box Model */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.2rem 1.6rem;
+  padding: 3rem 0;
+}
+
+.service {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem ;
+  min-height: 28rem;
+
+  /* Visual */
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.07);;
+
+  /* Tipography */
+  text-align: center;
+
+}
+.service div {
+  /* Box Model */
+  height: 7.8rem;
+  width: 7.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Visual */
+  background: var(--red);
+  border-radius: 50%;
+}
+.service h1 {
+  /* Tipography */
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-transform: capitalize;
+}
+.service p {
+  /* Tipography */
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  
+  /* Visual */
+  color: var(--text3);
+}
