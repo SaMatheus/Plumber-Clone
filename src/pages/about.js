@@ -6,7 +6,7 @@ import pointsData from '../data/pointsData'
 
 // COMPONENT
 import Header from '../components/Header'
-import RoutDescription from '../components/RoutDescription'
+import RouteDescription from '../components/RouteDescription'
 import CommercialService from '../components/CommercialService'
 import Team from '../components/Team'
 import Wrapper from '../components/Wrapper'
@@ -15,7 +15,7 @@ const About = () => {
   return (
     <div>
      <Header />
-     <RoutDescription>
+     <RouteDescription>
       <h1>About Us</h1>
       <p>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -23,7 +23,7 @@ const About = () => {
       when an unknown printer took a galley of type and scrambled it to make a type 
       specimen book
       </p>
-     </RoutDescription>
+     </RouteDescription>
      <section className={styles.pointsCompanyContainer}>
        <div className={styles.pointsCompanyText}>
          <p>

@@ -4,8 +4,15 @@ import styles from '../styles/components/Header.module.css'
 // ROUTER
 import Link from 'next/link'
 
+// HOOKS
+import { useContext } from 'react'
+
+// CONTEXT
+import UrlContext from '../context/UrlContext'
+
+
 function Header() {
-  let url = window.location.pathname
+  const { url } = useContext(UrlContext)
 
   const handleClick = () => {
     alert('Request success, please wait for the contact of our collaborators!')

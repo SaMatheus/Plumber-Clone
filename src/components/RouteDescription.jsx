@@ -1,6 +1,6 @@
 import styles from '../styles/components/RouteDescription.module.css'
 
-const RoutDescription = ({children}) => {
+const RouteDescription = ({children}) => {
   return (
     <section className={styles.routeDescriptionContainer}>
        <span/>
@@ -11,4 +11,4 @@ const RoutDescription = ({children}) => {
   )
 }
 
-export default RoutDescription
+export default RouteDescription
