@@ -2,7 +2,19 @@
 import Header from '../components/Header'
 import Wrapper from '../components/Wrapper'
 
+// HOOKS
+import { useContext, useEffect } from 'react';
+
+// CONTEXT
+import { UrlContext } from '../context/UrlContext';
+
 const Blog = () => {
+  const { setUrl } = useContext(UrlContext)
+
+  useEffect(() => {
+    setUrl(`${window.location.pathname}`)
+  }, [])
+
   return (
     <div>
       <Header />

@@ -4,6 +4,12 @@ import styles from '../styles/pages/About.module.css'
 // DATA
 import pointsData from '../data/pointsData'
 
+// HOOKS
+import { useContext, useEffect } from 'react';
+
+// CONTEXT
+import { UrlContext } from '../context/UrlContext';
+
 // COMPONENT
 import Header from '../components/Header'
 import RouteDescription from '../components/RouteDescription'
@@ -12,6 +18,12 @@ import Team from '../components/Team'
 import Wrapper from '../components/Wrapper'
 
 const About = () => {
+  const { setUrl } = useContext(UrlContext)
+
+  useEffect(() => {
+    setUrl(`${window.location.pathname}`)
+  }, [])
+  
   return (
     <div>
      <Header />

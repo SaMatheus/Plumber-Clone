@@ -8,7 +8,7 @@ import Link from 'next/link'
 import { useContext } from 'react'
 
 // CONTEXT
-import UrlContext from '../context/UrlContext'
+import { UrlContext } from '../context/UrlContext'
 
 
 function Header() {

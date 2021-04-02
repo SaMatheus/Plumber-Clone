@@ -2,12 +2,12 @@ import {createContext, useState} from 'react'
 
 export const UrlContext = createContext()
 
-export default function UrlProvider({ children }) {
+export function UrlProvider({ children }) {
   const [url, setUrl] = useState('')
 
   return (
     <UrlContext.Provider
-      value={{
+      value = {{
         url, 
         setUrl
       }}

@@ -3,6 +3,10 @@ import styles from '../styles/pages/Home.module.css'
 
 // HOOKS
 import { useRouter } from 'next/router';
+import { useContext, useEffect } from 'react';
+
+// CONTEXT
+import { UrlContext } from '../context/UrlContext';
 
 // ICONS
 import { ImPlay2 } from "react-icons/im";
@@ -18,6 +22,11 @@ import Wrapper from '../components/Wrapper';
 
 export default function Home() {
   const router = useRouter();
+  const { setUrl } = useContext(UrlContext)
+
+  useEffect(() => {
+    setUrl(`${window.location.pathname}`)
+  }, [])
 
   return (
     <>
