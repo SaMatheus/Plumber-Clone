@@ -5,6 +5,8 @@ import styles from '../styles/components/Header.module.css'
 import Link from 'next/link'
 
 function Header() {
+  let url = window.location.pathname
+
   const handleClick = () => {
     alert('Request success, please wait for the contact of our collaborators!')
   }
@@ -15,32 +17,68 @@ function Header() {
       </div>
       <div className={styles.navBar}>
         <ul>
-          <li>
+          <li 
+            className={
+              url === '/' 
+              ? `${styles.navBarLink} ${styles.navBarLinkAcitve}` 
+              : `${styles.navBarLink}`
+            }
+          >
             <Link href="/">
               <a>Home</a>
             </Link>
           </li>
-          <li>
+          <li 
+            className={
+              url === '/about' 
+              ? `${styles.navBarLink} ${styles.navBarLinkAcitve}` 
+              : `${styles.navBarLink}`
+            }
+          >
             <Link href="/about">
               <a>About us</a>
             </Link>
           </li>
-          <li>
+          <li 
+            className={
+              url === '/services' 
+              ? `${styles.navBarLink} ${styles.navBarLinkAcitve}` 
+              : `${styles.navBarLink}`
+            }
+          >
             <Link href="/services">
               <a>Services</a>
             </Link>
           </li>
-          <li>
+          <li 
+            className={
+              url === '/project' 
+              ? `${styles.navBarLink} ${styles.navBarLinkAcitve}` 
+              : `${styles.navBarLink}`
+            }
+          >
             <Link href="/project">
               <a>Project</a>
             </Link>
           </li>
-          <li>
+          <li 
+            className={
+              url === '/blog' 
+              ? `${styles.navBarLink} ${styles.navBarLinkAcitve}` 
+              : `${styles.navBarLink}`
+            }
+          >
             <Link href="/blog">
               <a>Blogs</a>
             </Link>
           </li>
-          <li>
+          <li 
+            className={
+              url === '/contact' 
+              ? `${styles.navBarLink} ${styles.navBarLinkAcitve}` 
+              : `${styles.navBarLink}`
+            }
+          >
             <Link href="/contact">
               <a>Contact</a>
             </Link>
