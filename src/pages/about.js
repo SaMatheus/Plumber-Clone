@@ -48,7 +48,17 @@ const About = () => {
          </p>
        </div>
        <div className={styles.pointsCompanyGrid}>
-
+        {pointsData.map(service => {
+          return (
+            <div className={styles.pointService}>
+              <img src="/icons/about/2-pointscompany/point_icon.svg" alt=""/>
+              <div>
+                <h1>{service.title}</h1>
+                <p>{service.description}</p>
+              </div>
+            </div>
+          )
+        })}
        </div>
      </section>
      <Team />
