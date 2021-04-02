@@ -44,10 +44,22 @@ const Testimonial = () => {
                 </>
               )}
               <div className={styles.carrouselIndex}>
-                <span className={current === 0 ? `${styles.carrouselIndexSpan} ${styles.active}` : `${styles.carrouselIndexSpan}`}/>
-                <span className={current === 1 ? `${styles.carrouselIndexSpan} ${styles.active}` : `${styles.carrouselIndexSpan}`}/>
-                <span className={current === 2 ? `${styles.carrouselIndexSpan} ${styles.active}` : `${styles.carrouselIndexSpan}`}/>
-                <span className={current === 3 ? `${styles.carrouselIndexSpan} ${styles.active}` : `${styles.carrouselIndexSpan}`}/>
+                <span 
+                  className={current === 0 ? `${styles.carrouselIndexSpan} ${styles.active}` : `${styles.carrouselIndexSpan}`}
+                  onClick={() => setCurrent(0)}
+                />
+                <span 
+                  className={current === 1 ? `${styles.carrouselIndexSpan} ${styles.active}` : `${styles.carrouselIndexSpan}`}
+                  onClick={() => setCurrent(1)}
+                />
+                  <span 
+                  className={current === 2 ? `${styles.carrouselIndexSpan} ${styles.active}` : `${styles.carrouselIndexSpan}`}
+                  onClick={() => setCurrent(2)}
+                />
+                <span 
+                  className={current === 3 ? `${styles.carrouselIndexSpan} ${styles.active}` : `${styles.carrouselIndexSpan}`}
+                  onClick={() => setCurrent(3)}
+                />
               </div>
             </div>
           ))}
