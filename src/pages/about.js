@@ -6,6 +6,7 @@ import pointsData from '../data/pointsData'
 
 // COMPONENT
 import Header from '../components/Header'
+import CommercialService from '../components/CommercialService'
 import Team from '../components/Team'
 import Wrapper from '../components/Wrapper'
 
@@ -61,6 +62,7 @@ const About = () => {
         })}
        </div>
      </section>
+     <CommercialService />
      <Team />
      <Wrapper />
     </div>
