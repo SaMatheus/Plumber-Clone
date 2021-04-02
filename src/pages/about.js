@@ -6,6 +6,7 @@ import pointsData from '../data/pointsData'
 
 // COMPONENT
 import Header from '../components/Header'
+import RoutDescription from '../components/RoutDescription'
 import CommercialService from '../components/CommercialService'
 import Team from '../components/Team'
 import Wrapper from '../components/Wrapper'
@@ -14,18 +15,15 @@ const About = () => {
   return (
     <div>
      <Header />
-     <section className={styles.aboutUsContainer}>
-       <span/>
-       <div className={styles.aboutUsContent}>
-         <h1>About Us</h1>
-         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make a type 
-          specimen book
-         </p>
-       </div>
-     </section>
+     <RoutDescription>
+      <h1>About Us</h1>
+      <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+      when an unknown printer took a galley of type and scrambled it to make a type 
+      specimen book
+      </p>
+     </RoutDescription>
      <section className={styles.pointsCompanyContainer}>
        <div className={styles.pointsCompanyText}>
          <p>
