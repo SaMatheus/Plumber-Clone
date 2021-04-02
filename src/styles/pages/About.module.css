@@ -1,0 +1,59 @@
+/* About Us Container */
+.aboutUsContainer {
+  /* Box Model */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 45vh;
+
+  /* Visual */
+  background: url('/icons/about/1-aboutus/bg.png') no-repeat center left / cover;
+
+  /* Position */
+  position: relative;
+}
+.aboutUsContainer span {
+  /* Box Model */
+  height: 100%;
+  width: 100%;
+
+  /* Visual */
+  background: linear-gradient(to right, var(--red) 0%, transparent 100%);
+
+  /* Position */
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.aboutUsContent {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 43rem;
+  margin-bottom: 4.8rem;
+
+  /* Position */
+  z-index: 1;
+}
+.aboutUsContent h1 {
+  /* Tipography */
+  font-size: 4.4rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .2rem;
+
+  /* Visual */
+  color: var(--text1);
+}
+.aboutUsContent p {
+  /* Tipography */
+  font-size: 1.4rem;
+  line-height: 2rem;
+
+  /* Visual */
+  color: var(--white);
+}
