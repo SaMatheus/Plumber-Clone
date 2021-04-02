@@ -28,7 +28,7 @@ const Testimonial = () => {
 
   return (
     <section className={styles.testimonialContainer}>
-        <img src="/icons/9-slider/1.png" alt=""/>
+        <img src="/icons/home/9-slider/1.png" alt=""/>
         <h1>Testimonial</h1>
         <div className={styles.testimonialCarrousel}>
           <BsArrowLeftShort className={styles.leftArrow} onClick={prevSlide}/>

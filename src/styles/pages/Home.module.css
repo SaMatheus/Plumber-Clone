@@ -158,7 +158,7 @@
   width: 100%;
 
   /* Visual */
-  background: url('/icons/4-video/video_img.svg') no-repeat center center / cover;
+  background: url('/icons/home/4-video/video_img.svg') no-repeat center center / cover;
 }
 .videoBox svg {
   /* Tipography */
@@ -218,7 +218,7 @@
   height: 31.5rem;
 
   /* Visual */
-  background: url('/icons/5-company_history/company_history_img.svg') no-repeat center center / cover;
+  background: url('/icons/home/5-company_history/company_history_img.svg') no-repeat center center / cover;
   transform: scaleX(-1);
 }
 
@@ -315,7 +315,7 @@
   width: 100%;
 
   /* Visual */
-  background: url('/icons/7-section_img/section_img.svg') no-repeat center center / cover;
+  background: url('/icons/home/7-section_img/section_img.svg') no-repeat center center / cover;
 }
 
 /* Team Container */

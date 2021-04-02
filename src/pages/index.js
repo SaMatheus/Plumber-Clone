@@ -30,13 +30,13 @@ export default function Home() {
           <Button onClick={() => router.push('/services')}>See all services</Button>
         </div>
         <div className={styles.bannerRight}>
-          <img src="icons/2-banner/banner1.svg" alt=""/>
-          <img src="icons/2-banner/banner2.svg" alt=""/>
+          <img src="/icons/home/2-banner/banner1.svg" alt=""/>
+          <img src="/icons/home/2-banner/banner2.svg" alt=""/>
         </div>
       </section>
       <section className={styles.servicesContainer}>
         <div className={styles.service}>
-          <img src="icons/3-services/group_service1.svg" alt=""/>
+          <img src="/icons/home/3-services/group_service1.svg" alt=""/>
           <h1>Residental service</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -45,7 +45,7 @@ export default function Home() {
           <button onClick={() => router.push('/services')}>Learn More</button>
         </div>
         <div className={styles.service}>
-          <img src="icons/3-services/group_service2.svg" alt=""/>
+          <img src="/icons/home/3-services/group_service2.svg" alt=""/>
           <h1>Commercial Service</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -54,7 +54,7 @@ export default function Home() {
           <button onClick={() => router.push('/services')}>Learn More</button>
         </div>
         <div className={styles.service}>
-          <img src="icons/3-services/group_service3.svg" alt=""/>
+          <img src="/icons/home/3-services/group_service3.svg" alt=""/>
           <h1>Maintenance</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -111,7 +111,7 @@ export default function Home() {
           {pointsData.map(point => {
             return (
               <div key={point.id} className={styles.point}>
-                <img src="/icons/6-plumber_point/point_icon.svg" alt=""/>
+                <img src="/icons/home/6-plumber_point/point_icon.svg" alt=""/>
                 <p>{point.title}</p>
               </div>
             )
@@ -133,7 +133,7 @@ export default function Home() {
           {teamData.map(employee => {
             return (
               <div key={employee.id} className={styles.employee}>
-                <img src="/icons/8-team/team.png" alt=""/>
+                <img src="/icons/home/8-team/team.png" alt=""/>
                 <div className={styles.employeeText}>
                   <p>{employee.name}</p>
                   <strong>{employee.job}</strong>

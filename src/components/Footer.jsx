@@ -12,7 +12,7 @@ const Footer = () => {
     <section className={styles.footerContainer}>
       <div className={styles.footerContent}>
         <div className={styles.footerLogoBox}>
-          <img src="/icons/11-footer/footer_logo.svg" alt="logomarca"/>
+          <img src="/icons/home/11-footer/footer_logo.svg" alt="logomarca"/>
           <p>
             Lore Issue is simply dummy text of the printing and typesetting industry. Lore Issue has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>

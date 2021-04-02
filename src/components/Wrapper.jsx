@@ -1,7 +1,7 @@
 // COMPONENTS
-import Footer from './Footer'
-import News from './News'
 import Testimonial from './Testimonial'
+import News from './News'
+import Footer from './Footer'
 
 const Wrapper = () => {
   return (
