@@ -1,4 +1,15 @@
-.servicesContainer {
+/* Image Container */
+.imageContainer {
+  /* Box Model */
+  height: 30vh;
+  width: 100%;
+
+  /* Visual */
+  background: url('/icons/home/7-section_img/section_img.svg') no-repeat center center / cover;
+}
+
+/* PROJECT CONTAINER */
+.projectContainer {
   /* Box Model */
   display: flex;
   flex-direction: column;
@@ -35,50 +46,45 @@
 .grid {
   /* Box Model */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2.2rem 1.6rem;
-  padding: 3rem 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem 4rem;
 }
 
-.service {
+.project {
   /* Box Model */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem ;
   min-height: 28rem;
-
-  /* Visual */
-  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.07);
+  min-width: 35rem;
 
   /* Tipography */
   text-align: center;
 
 }
-.service div {
+.project img {
   /* Box Model */
-  height: 7.8rem;
-  width: 7.8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  /* Visual */
-  background: var(--red);
-  border-radius: 50%;
+  height: 100%;
+  width: 100%;
 }
-.service h1 {
+.project h1 {
   /* Tipography */
   font-size: 1.4rem;
   line-height: 1.6rem;
-  text-transform: capitalize;
-}
-.service p {
-  /* Tipography */
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  
+  font-weight: 400;
+  text-transform: uppercase;
+
   /* Visual */
-  color: var(--text3);
+  color: var(--red);
+}
+.project p {
+  /* Tipography */
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 500;
+
+  /* Box Model */
+  margin-top: .8rem;
+
 }
