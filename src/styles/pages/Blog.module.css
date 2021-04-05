@@ -1,0 +1,116 @@
+/* Blog COntainer */
+.blogContainer {
+  /* Box Model */
+  display: flex;
+  height: 35rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blogContainer div {
+  /* Box Model */
+  height: 100%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.blogContainer div h1 {
+  /* Tipography */
+  font-size: 4.4rem;
+  text-transform: uppercase;
+}
+.blogContainer div p {
+  /* Box Model */
+  margin-top: 2rem;
+
+  /* Tipography */
+  font-size: 1.4rem;
+}
+
+.blogContainer img {
+  /* Box Model */
+  height: 100%;
+  width: 60%;
+}
+
+/* Blog Description Container */
+.blogDescriptionContainer {
+  /* Box Model */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60vh;
+}
+.blogDescriptionContainer img {
+  height: 100%;
+  width: 45%;
+}
+
+.blogDescriptionRight {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 45%;
+  height: 100%;
+}
+.blogDescriptionRight h1 {
+  /* Tipography */
+  text-transform: uppercase;
+  font-size: 3.8rem;
+}
+
+.blogDescriptionRight div p {
+  /* Tipography */
+  font-size: 1.4rem;
+
+  /* Box Model */
+  margin-bottom: 1.5rem;
+}
+
+.blogDescriptionRight a {
+  /* Visual */
+  color: var(--red);
+
+  /* Tipography */
+  font-size: 1.6rem;
+  text-decoration: underline;
+}
+
+/* Blog Grid */
+.blogGrid {
+  /* Box Model */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7rem 10rem ;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.blogPost {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 28rem;
+}
+.blogPost img{
+  width: 100%;
+}
+.blogPost h1{
+  font-size: 2rem;
+}
+.blogPost p{
+  font-size: 1.2rem;
+}
+.blogPost a{
+  /* Tipography */
+  font-size: 1.6rem;
+  text-decoration: underline;
+
+  /* Visual */
+  color: var(--red);
+}
