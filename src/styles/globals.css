@@ -42,21 +42,26 @@ button {
   cursor: pointer;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   outline: none;
 }
 
+textarea {
+  resize: none;
+}
+
 ::-webkit-input-placeholder {
-  color: black;
+  color: var(--text1);
 }
 :-moz-placeholder {
-  color: black;
+  color: var(--text1);
 }
 :-ms-input-placeholder{
-  color: black;
+  color: var(--text1);
 }
 ::-moz-placeholder {
-  color: black;
+  color: var(--text1);
 }
 
 @media screen and (max-width: 1400px) {

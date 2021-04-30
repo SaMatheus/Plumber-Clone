@@ -19,9 +19,8 @@ const Form = (props) => {
         <input type="text" onChange={props.onSubjectChange} placeholder="Subject"/>
       </label>
       <label className={styles.labelStyle}>
-        <input type="text" onChange={props.onDescriptionChange} placeholder="Description"/>
+        <textarea onChange={props.onDescriptionChange} placeholder="Description"></textarea>
       </label>
-      <input type="submit" value="send a message"/>
     </form>
   )
 }

@@ -1,0 +1,23 @@
+.formContainer {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+  padding-top: 7rem;
+}
+
+.formContainer h1 {
+  /* Box Model */
+  margin-bottom: 4rem;
+
+  /* Tipography */
+  font-size: 4rem;
+}
+
+.formContainer button {
+  margin-top: 2.2rem;
+  align-self: flex-end;
+  font-weight: bold;
+  font-size: 1.4rem;
+}

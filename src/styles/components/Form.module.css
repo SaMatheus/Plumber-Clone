@@ -1,0 +1,33 @@
+.formStyle {
+  /* Box Model */
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem 3.8rem;
+  width: 100%;
+}
+
+.labelStyle {
+  /* Box Model */
+  height: 3.2rem;
+  width: 100%;
+}
+
+.labelStyle input,
+.labelStyle textarea {
+  /* Box Model */
+  height: 100%;
+  width: 100%;
+
+  /* Visual */
+  background: transparent;
+  border: 0 none;
+  border-bottom: 1px solid #707070;
+  color: var(--text3);
+
+  /* Tipography */
+  font-size: 1.6rem;
+}
+
+.labelStyle:nth-child(5) {
+  grid-column: 1/3;
+}

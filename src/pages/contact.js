@@ -4,6 +4,7 @@ import styles from '../styles/pages/Contact.module.css'
 // COMPONENT
 import Header from '../components/Header'
 import RouteDescription from '../components/RouteDescription'
+import Button from '../components/Button'
 import Wrapper from '../components/Wrapper'
 import Form from '../components/Form';
 
@@ -36,6 +37,7 @@ const Contact = () => {
       <section className={styles.formContainer}>
         <h1>Get in touch</h1>
         <Form />
+        <Button> Send a Message</Button>
       </section>
       <Wrapper />
     </div>
