@@ -11,7 +11,7 @@ const News = () => {
       <div className={styles.newsBox}>
         {newsData.map(news => {
           return (
-            <div className={styles.news}>
+            <div className={styles.news} key={news.id}>
               <div style={{background: `url(${news.img}) no-repeat center center / cover`}}/>
               <h2>{news.title}</h2>
               <p>{news.paragraph}</p>

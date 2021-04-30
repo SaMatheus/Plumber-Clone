@@ -44,7 +44,7 @@ const Footer = () => {
           <h1>Recent Post</h1>
           {recentPostData.map(post => {
             return(
-              <div className={styles.footerPost}>
+              <div className={styles.footerPost} key={post.id}>
                 <img src={post.img} alt=""/>
                 <div>
                   <h2>{post.title}</h2>
