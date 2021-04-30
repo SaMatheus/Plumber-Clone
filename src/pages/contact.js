@@ -5,12 +5,14 @@ import styles from '../styles/pages/Contact.module.css'
 import Header from '../components/Header'
 import RouteDescription from '../components/RouteDescription'
 import Wrapper from '../components/Wrapper'
+import Form from '../components/Form';
 
 // HOOKS
 import { useContext, useEffect } from 'react';
 
 // CONTEXT
 import { UrlContext } from '../context/UrlContext';
+
 
 const Contact = () => {
   const { setUrl } = useContext(UrlContext)
@@ -33,7 +35,7 @@ const Contact = () => {
       </RouteDescription>
       <section className={styles.formContainer}>
         <h1>Get in touch</h1>
-        
+        <Form />
       </section>
       <Wrapper />
     </div>
