@@ -36,8 +36,7 @@ const Contact = () => {
       </RouteDescription>
       <section className={styles.formContainer}>
         <h1>Get in touch</h1>
-        <Form />
-        <Button> Send a Message</Button>
+        <Form/>
       </section>
       <Wrapper />
     </div>
